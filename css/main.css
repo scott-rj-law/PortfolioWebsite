@@ -1,0 +1,26 @@
+/**--------------------					
+ * --- SMALL SCREEN --- //
+ * --------------------					
+ */
+
+html {
+	background-color: #151524;
+	color: #fff;
+	font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+#introSection {
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+}
+
+.viewing_section {
+	width: 90%;
+	padding-bottom: 2rem;
+	margin: 0 auto;
+}
+
