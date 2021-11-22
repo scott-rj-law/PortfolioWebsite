@@ -13,6 +13,22 @@ h1 {
 	font-size: 2rem;
 }
 
+ul {
+	list-style-type: none;
+	display: inline-block;
+ 	float:left;
+ 	padding:  0;
+}
+
+div {
+	width: 100%;
+}
+
+ul li {
+	height: 5rem;
+	width: 100%
+}
+
 #introSection {
 	padding-top: 10rem;
 	padding-bottom: 10rem;
@@ -24,3 +40,31 @@ h1 {
 	margin: 0 auto;
 }
 
+#skillList {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.skill_list_left {
+  flex: 50%;
+  text-align: center;
+}
+
+.skill_list_right {
+  flex: 50%;
+  text-align: center;
+}
+
+.lang_logo {
+	float: left;
+	height: 3rem;
+	padding: 5px;
+	margin: 0.1rem;
+	filter: invert(100%);
+}
+
+.skill_li {
+	display: block;
+	width: 100%;
+}
