@@ -1,7 +1,9 @@
-/**--------------------					
- * --- SMALL SCREEN --- //
- * --------------------					
+/**------------------------------------------------------
+ * --- SMALL SCREEN --- SMALL SCREEN --- SMALL SCREEN --- //
+ * ------------------------------------------------------
  */
+
+/* --- MAIN PAGE SETUP --- */
 
 html {
 	background-color: #151524;
@@ -17,20 +19,18 @@ body {
 	margin: 0;
 }
 
-/**-----------------------------					
- * ------ MAIN NAVIGATION ------ //
- * -----------------------------					
- */
+/* --- MAIN NAVIGATION MENU --- */
 
 nav {
 	position: fixed;
 	width: 100%;
 	backdrop-filter: blur(6px);
+	z-index: 1;
 }
 
-.nav_burger {
+.nav_icon {
 	display: block;
-	height: 6rem;
+	height: 3rem;
 	border-bottom: 1px solid #505050;
 	background-color: rgba(21,21,36,0.85);
 }
@@ -38,7 +38,7 @@ nav {
 .nav_item {
 	text-align: center;
 	text-decoration: none;
-	display: block;
+	display: none;
 	background-color: rgba(21,21,36,0.85);
 	color: #D3D3D3;
 	padding: 0;
@@ -47,16 +47,22 @@ nav {
 	width: 100%;
 }
 
-#navBurgerSVG {
+.nav_img {
 	position: fixed;
+	right: 0;
 	height: 2rem;
+	width: 2rem;
 	padding: 0.5rem;
 	filter: invert(80%);
 }
 
+#navHomeSVG {
+	left: 0;
+}
+
 /* hover animations */
 
-#navBurgerSVG:hover {
+.nav_img:hover {
 	filter: invert(100%);
 }
 
@@ -64,10 +70,7 @@ nav {
 	filter: invert(100%);
 }
 
-/**--------------------					
- * ------ SKILLS ------ //
- * --------------------					
- */
+/* --- SKILLS SECTION --- */
 
 #introSection {
 	padding-top: 10rem;

@@ -6,15 +6,19 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <title>Scott RJ Portfolio</title>
 </head>
-<body>
+<body onload="initialisation()">
 
     <header>
         <nav>
-            <a class="nav_burger" href="#"><img id="navBurgerSVG" src="images/hamburger-menu.svg"></a>
-            <a class="nav_item" href="#aboutmeSection">About</a>
-            <a class="nav_item" href="#skillsSection">Skills</a>
-            <a class="nav_item" href="#portfolioSection">Portfolio</a>
-            <a class="nav_item" href="#contactSection">Contact</a>
+            <a href="#top"><img class="nav_img" id="navHomeSVG" src="images/home-menu.svg"></a>
+            <a class="nav_icon"> 
+                <img class="nav_img" id="navBurgerSVG" src="images/hamburger-menu.svg" onclick="burgerMenuTransform()">
+                <img class="nav_img" id="navCrossSVG" src="images/cross-menu.svg" onclick="burgerMenuTransform()">
+            </a>
+            <a class="nav_item" href="#aboutmeSection" onclick="burgerMenuTransform()">About</a>
+            <a class="nav_item" href="#skillsSection" onclick="burgerMenuTransform()">Skills</a>
+            <a class="nav_item" href="#portfolioSection" onclick="burgerMenuTransform()">Portfolio</a>
+            <a class="nav_item" href="#contactSection" onclick="burgerMenuTransform()">Contact</a>
         </nav>
     </header>
 
@@ -85,6 +89,9 @@
             </address>
         </div>
     </section>
+
+
+    <script src="js/common.js"></script>
 
 </body>
 </html>
