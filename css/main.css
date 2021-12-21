@@ -1,7 +1,9 @@
-/**--------------------					
- * --- SMALL SCREEN --- //
- * --------------------					
+/**------------------------------------------------------
+ * --- SMALL SCREEN --- SMALL SCREEN --- SMALL SCREEN --- //
+ * ------------------------------------------------------
  */
+
+/* --- MAIN PAGE SETUP --- */
 
 html {
 	background-color: #151524;
@@ -13,21 +15,62 @@ h1 {
 	font-size: 2rem;
 }
 
-ul {
-	list-style-type: none;
-	display: inline-block;
- 	float:left;
- 	padding:  0;
+body {
+	margin: 0;
 }
 
-div {
+/* --- MAIN NAVIGATION MENU --- */
+
+nav {
+	position: fixed;
+	width: 100%;
+	backdrop-filter: blur(6px);
+	z-index: 1;
+}
+
+.nav_icon {
+	display: block;
+	height: 3rem;
+	border-bottom: 1px solid #505050;
+	background-color: rgba(21,21,36,0.85);
+}
+
+.nav_item {
+	text-align: center;
+	text-decoration: none;
+	display: none;
+	background-color: rgba(21,21,36,0.85);
+	color: #D3D3D3;
+	padding: 0;
+	line-height: 3rem;
+	border-bottom: 1px solid #505050;
 	width: 100%;
 }
 
-ul li {
-	height: 5rem;
-	width: 100%
+.nav_img {
+	position: fixed;
+	right: 0;
+	height: 2rem;
+	width: 2rem;
+	padding: 0.5rem;
+	filter: invert(80%);
 }
+
+#navHomeSVG {
+	left: 0;
+}
+
+/* hover animations */
+
+.nav_img:hover {
+	filter: invert(100%);
+}
+
+.nav_item:hover {
+	filter: invert(100%);
+}
+
+/* --- SKILLS SECTION --- */
 
 #introSection {
 	padding-top: 10rem;
